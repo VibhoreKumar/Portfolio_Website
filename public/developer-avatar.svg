@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+<title id="title">Bearded developer avatar with a cap</title><desc id="desc">A friendly grayscale cartoon developer in a hoodie and baseball cap, with gentle head movement and blinking eyes.</desc>
+<defs>
+<linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#faf9f6"/><stop offset="1" stop-color="#efeee9"/></linearGradient>
+<linearGradient id="hoodie" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#57595f"/><stop offset="1" stop-color="#303238"/></linearGradient>
+<clipPath id="circle"><circle cx="300" cy="305" r="180"/></clipPath>
+</defs>
+<style>
+.head{transform-origin:300px 354px;animation:head 6s ease-in-out infinite}
+.eye-left{transform-origin:264px 263px;animation:blink 5.2s infinite}
+.eye-right{transform-origin:336px 263px;animation:blink 5.2s infinite}
+.bust{animation:breathe 4.5s ease-in-out infinite;transform-origin:300px 490px}
+@keyframes head{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(3deg)}}
+@keyframes blink{0%,40%,44%,72%,76%,100%{transform:scaleY(1)}42%,74%{transform:scaleY(.08)}}
+@keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="20" y="24" width="560" height="558" rx="74" fill="#b9b8b3" opacity=".13"/>
+<rect x="21" y="18" width="558" height="558" rx="72" fill="url(#card)" stroke="#c9c7c0" stroke-width="2"/>
+<circle cx="300" cy="305" r="180" fill="#d9dade"/>
+<circle cx="300" cy="305" r="171" fill="#e1e2e4" opacity=".5"/>
+<g clip-path="url(#circle)">
+<g class="bust">
+<!-- simple hoodie silhouette -->
+<path d="M170 489v-46q0-55 72-80l58-11 58 11q72 25 72 80v46Z" fill="url(#hoodie)"/>
+<path d="M260 350q-52 1-49 30l55 58 34-61-5-25m45-2q52 1 49 30l-55 58-34-61 5-25" fill="#484b51" stroke="#686b72" stroke-width="2"/>
+<path d="M274 329v34q26 32 52 0v-34" fill="#c7bfb5"/>
+<path d="M275 381q-7 36-5 78m55-78q8 32 4 67" fill="none" stroke="#dddcd8" stroke-width="3" stroke-linecap="round"/>
+<rect x="267" y="454" width="5" height="13" rx="2" fill="#aeb0b2"/><rect x="327" y="443" width="5" height="13" rx="2" fill="#aeb0b2"/>
+<path d="M300 394v100" stroke="#797c80" stroke-width="2"/>
+<g class="head">
+<!-- ears -->
+<ellipse cx="219" cy="266" rx="15" ry="24" fill="#ccc4ba"/><ellipse cx="381" cy="266" rx="15" ry="24" fill="#ccc4ba"/>
+<path d="M227 209q10-53 73-53t73 53l-3 75q-3 65-70 78-67-13-70-78Z" fill="#ded6cb"/>
+<path d="M229 265q8 30 22 30 19-9 49-10 30 1 49 10 14 0 22-30l-2 39q-8 48-69 61-61-13-69-61Z" fill="#343438"/>
+<!-- brows and blinking eyes -->
+<path d="M247 246q15-7 31-1m44 0q17-6 31 1" fill="none" stroke="#333438" stroke-width="7" stroke-linecap="round"/>
+<g class="eye-left"><ellipse cx="264" cy="263" rx="6" ry="8" fill="#303136"/><circle cx="266" cy="261" r="1.6" fill="#fff"/></g>
+<g class="eye-right"><ellipse cx="336" cy="263" rx="6" ry="8" fill="#303136"/><circle cx="338" cy="261" r="1.6" fill="#fff"/></g>
+<path d="m297 269-5 16q7 5 15 0" fill="none" stroke="#b7aca0" stroke-width="3" stroke-linecap="round"/>
+<path d="M267 303q14-16 33-9 19-7 33 9l-5 8q-13-2-28-8-15 6-28 8Z" fill="#25262a"/>
+<path d="M277 313q23 15 46 0-2 26-23 26-21 0-23-26Z" fill="#222328"/>
+<path d="M279 315q21 11 42 0l-3 9q-18 6-36 0Z" fill="#f8f7f2"/>
+<!-- dark baseball cap with curved brim -->
+<path d="M216 228q-5-87 78-94 86-5 94 81l-34 10q-63-14-138 3Z" fill="#34363c"/>
+<path d="M294 135q-31 29-31 79m34-80q39 26 43 79" stroke="#65676d" stroke-width="2" fill="none" opacity=".65"/>
+<ellipse cx="294" cy="135" rx="7" ry="4" fill="#27292f"/>
+<path d="M214 220q75-26 143-6l39 16q8 5-5 9-40 12-96-3-44-10-79-5Z" fill="#25272d"/>
+<path d="m286 173-8 7 8 6m23-13 8 7-8 6m-9-16-4 19" stroke="#d2d2cf" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g></g></g>
+</svg>
